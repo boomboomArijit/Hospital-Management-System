@@ -1,0 +1,140 @@
+﻿@model Hospital_Management_System.Models.AdminCred
+
+@{
+    ViewBag.Title = "AdminLogin";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+
+
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<style>
+    body {
+        background-image: url('../../content/images/patient.jpg');
+        background-position: center;
+        background-size: 1360px 768px;
+    }
+</style>
+
+
+
+@*</head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+
+            <div class="container">
+
+                @Html.ActionLink("We Care Hospital", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <a href="~/Views/Shared/_Layout.cshtml"></a>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+
+                    </ul>
+
+                </div>
+                </nav>
+
+        </body>
+        </html>*@
+
+
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="center-content">
+
+        <h2>AdminLogin</h2>
+        <div class="form-horizontal">
+            <div class=" center-content">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                        @if (ViewBag.Username == true)
+                        {
+                            <span class="text-danger">Username field is Required</span>
+                        }
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @type = "password" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        @if (ViewBag.Password == true)
+                        {
+                            <span class="text-danger">Password field is Required</span>
+                        }
+                        else if (ViewBag.WrongCred == true && ViewBag.Password != true)
+                        {
+                            <span class="text-danger">Wrong username or password</span>
+                        }
+                    </div>
+                </div>
+
+                <div class="form-group mt-2 mb-2">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Login" class="btn btn-success" />
+                    </div>
+                </div>
+            </div>
+
+
+
+            @Html.ActionLink("Back to Home", "Index", null, new { @class = "btn btn-dark" })
+        </div>
+
+
+        <style>
+            body {
+                background-image: url('../../content/images/patient.jpg');
+                background-position: center;
+                background-size: 1360px 768px;
+            }
+        </style>
+
+
+
+
+    </div>
+
+}
+
+
+
+

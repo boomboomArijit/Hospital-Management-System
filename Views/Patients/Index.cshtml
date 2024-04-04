@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Hospital_Management_System.Models.Patient>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Patients Details</h2>
+@*
+<p-->*@
+    @*>
+    @Html.ActionLink("Create New", "Create")*@
+@*</p>*@
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientEmailAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PatientName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PatientAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContactNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PatientEmailAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+
+                <td>
+
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PatientID }, new { @class = "btn btn-primary" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.PatientID }, new { @class = "btn btn-dark" }) |
+                    @Html.ActionLink("Delete", "Delete", new { name = item.PatientName }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+
+        }
+        <style>
+            body {
+                background-image: url('../../content/images/doctorsss.jpg');
+                background-position: center;
+                background-size: 1360px 700px;
+                background-color: #77c9d4;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+
+    </table>
+<p>
+    @Html.ActionLink("Back","Index","Doctors1",null, new { @class = "btn btn-warning" })
+</p>

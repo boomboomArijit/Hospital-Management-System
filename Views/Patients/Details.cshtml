@@ -1,0 +1,67 @@
+﻿@model Hospital_Management_System.Models.Patient
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Patient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientAge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientEmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientEmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+    </dl>
+    <style>
+        body {
+            background-image: url('../../content/images/doctorsss.jpg');
+            background-position: center;
+            background-size: 1360px 700px;
+            background-color: #77c9d4;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-dark" })
+</p>

@@ -1,0 +1,146 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+
+        <div class="container">
+
+            @Html.ActionLink("We Care Hospital", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <a href="~/Views/Shared/_Layout.cshtml"></a>
+                <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("AdminLogin", "AdminLogin", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+                </ul>
+
+            </div>
+
+@*
+            <div class="navbar-nav flex-grow-1">
+                <ul class="">
+
+
+                    <li>@Html.ActionLink("Login", "Login", "Patients", new { area = "" }, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+            <div class="navbar-nav flex-grow-1">
+
+                <div class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Logout", "AdminLogin", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    </ul>
+                </div>
+*@
+
+@*
+                <li>@Html.ActionLink("Signup", "Create", "Patients", new { area = "" }, new { @class = "nav-link" })</li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li><a>Welcome @User.Identity.Name</a></li>
+
+                }
+                <li>@Html.ActionLink("AdminLogin", "AdminLogin", "Home")</li>
+
+                </ul>
+            </div>
+            <div class="navbar-nav flex-grow-1">
+                <ul class="">
+                    <li>@Html.ActionLink("Signup", "Create", "Patients", new { area = "" }, new { @class = "nav-link fit2" })</li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><a>Welcome @User.Identity.Name</a></li>
+                        <li>@Html.ActionLink("Logout", "Logout", "Home", new { area = "" }, new { @class = "nav-link fit3" })</li>
+                    }
+                </ul>*@
+
+          @*  </div>-->-->*@@*
+            <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+            <li>@Html.ActionLink("AboutUs", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            <li>@Html.ActionLink("ContactDetails", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            <li>@Html.ActionLink("AdminLogin", "AdminLogin", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+
+            <li>@Html.ActionLink("Doctors", "Create", "Doctors", new { area = "" }, new { @class = "nav-link" })</li>
+
+            <li>@Html.ActionLink("Patients", "Create", "Patients", new { area = "" }, new { @class = "nav-link" })</li>
+
+*@
+            @if (User.Identity.IsAuthenticated)
+            { 
+
+                <li>
+                    @Html.ActionLink("LogOut", "LogOut", "Home", new { area = "" }, new { @class = "btn btn-danger" })
+                </li>
+
+            }
+            else
+            {
+                    @Html.ActionLink("Login", "Login", "Patients", new { area = "" }, new { @class = "btn btn-success mr-2" })
+                    @Html.ActionLink("SignUp", "Create", "Patients", new { area = "" }, new { @class = "btn btn-warning" })  
+            }
+      
+    </nav>
+
+    <div class="container body-content">
+
+        @RenderBody()
+
+        <hr />
+
+        <footer>
+
+            <p>&copy; @DateTime.Now.Year - We Care Hospital</p>
+
+        </footer>
+
+    </div>
+    <style>
+        .nav-link {
+            float: right;
+        }
+    </style>
+    @Scripts.Render("~/bundles/jquery")
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", required: false)
+
+</body>
+
+</html>
+
+
+
+
+
+
+

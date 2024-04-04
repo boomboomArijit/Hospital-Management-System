@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Hospital_Management_System.Models.Doctor>
+
+@{
+    ViewBag.Title = "Begin";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Book Your Appointment</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Specialization)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorFees)
+        </th>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Specialization)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorFees)
+            </td>
+            <td>
+
+                @Html.ActionLink("Book Your Appointment Now", "Bill", "Patients", new { DoctorId = item.DoctorID, patientId = ViewBag.Patient }, new { @class = "btn btn-success" })
+            </td>
+        </tr>
+        <style>
+            body {
+                background-image: url('../../content/images/doctorsss.jpg');
+                background-position: center;
+                background-size: 1360px 700px;
+                background-color: #77c9d4;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    }
+        
+    </table>
+<div>
+    @Html.ActionLink("Logout🔒", "Logout", "Home", null, new { @class = "btn btn-dark" })
+
+</div>
+   

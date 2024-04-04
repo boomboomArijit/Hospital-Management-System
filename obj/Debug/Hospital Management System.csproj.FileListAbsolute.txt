@@ -1,0 +1,93 @@
+C:\Hospital Management System\bin\Hospital Management System.dll.config
+C:\Hospital Management System\bin\Hospital Management System.dll
+C:\Hospital Management System\bin\Hospital Management System.pdb
+C:\Hospital Management System\bin\roslyn\csc.exe
+C:\Hospital Management System\bin\roslyn\csc.exe.config
+C:\Hospital Management System\bin\roslyn\csc.rsp
+C:\Hospital Management System\bin\roslyn\csi.exe
+C:\Hospital Management System\bin\roslyn\csi.exe.config
+C:\Hospital Management System\bin\roslyn\csi.rsp
+C:\Hospital Management System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Hospital Management System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Hospital Management System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Hospital Management System\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Hospital Management System\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Hospital Management System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Hospital Management System\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Hospital Management System\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Hospital Management System\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Hospital Management System\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Hospital Management System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Hospital Management System\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Hospital Management System\bin\roslyn\System.AppContext.dll
+C:\Hospital Management System\bin\roslyn\System.Collections.Immutable.dll
+C:\Hospital Management System\bin\roslyn\System.Console.dll
+C:\Hospital Management System\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Hospital Management System\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Hospital Management System\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Hospital Management System\bin\roslyn\System.Globalization.Calendars.dll
+C:\Hospital Management System\bin\roslyn\System.IO.Compression.dll
+C:\Hospital Management System\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Hospital Management System\bin\roslyn\System.IO.FileSystem.dll
+C:\Hospital Management System\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Hospital Management System\bin\roslyn\System.Net.Http.dll
+C:\Hospital Management System\bin\roslyn\System.Net.Sockets.dll
+C:\Hospital Management System\bin\roslyn\System.Reflection.Metadata.dll
+C:\Hospital Management System\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Hospital Management System\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Hospital Management System\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Hospital Management System\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Hospital Management System\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Hospital Management System\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Hospital Management System\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Hospital Management System\bin\roslyn\System.ValueTuple.dll
+C:\Hospital Management System\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Hospital Management System\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Hospital Management System\bin\roslyn\System.Xml.XPath.dll
+C:\Hospital Management System\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Hospital Management System\bin\roslyn\vbc.exe
+C:\Hospital Management System\bin\roslyn\vbc.exe.config
+C:\Hospital Management System\bin\roslyn\vbc.rsp
+C:\Hospital Management System\bin\roslyn\VBCSCompiler.exe
+C:\Hospital Management System\bin\roslyn\VBCSCompiler.exe.config
+C:\Hospital Management System\bin\Antlr3.Runtime.dll
+C:\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Hospital Management System\bin\Microsoft.Web.Infrastructure.dll
+C:\Hospital Management System\bin\Newtonsoft.Json.dll
+C:\Hospital Management System\bin\System.Web.Helpers.dll
+C:\Hospital Management System\bin\System.Web.Mvc.dll
+C:\Hospital Management System\bin\System.Web.Optimization.dll
+C:\Hospital Management System\bin\System.Web.Razor.dll
+C:\Hospital Management System\bin\System.Web.WebPages.Deployment.dll
+C:\Hospital Management System\bin\System.Web.WebPages.dll
+C:\Hospital Management System\bin\System.Web.WebPages.Razor.dll
+C:\Hospital Management System\bin\WebGrease.dll
+C:\Hospital Management System\bin\System.Web.Helpers.xml
+C:\Hospital Management System\bin\System.Web.Mvc.xml
+C:\Hospital Management System\bin\System.Web.Optimization.xml
+C:\Hospital Management System\bin\System.Web.Razor.xml
+C:\Hospital Management System\bin\System.Web.WebPages.xml
+C:\Hospital Management System\bin\System.Web.WebPages.Deployment.xml
+C:\Hospital Management System\bin\System.Web.WebPages.Razor.xml
+C:\Hospital Management System\bin\Newtonsoft.Json.xml
+C:\Hospital Management System\bin\Antlr3.Runtime.pdb
+C:\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Hospital Management System\obj\Debug\Hospital Management System.csproj.AssemblyReference.cache
+C:\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
+C:\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
+C:\Hospital Management System\obj\Debug\Hospital Management System.dll
+C:\Hospital Management System\obj\Debug\Hospital Management System.pdb
+C:\Hospital Management System\bin\EntityFramework.dll
+C:\Hospital Management System\bin\EntityFramework.SqlServer.dll
+C:\Hospital Management System\bin\EntityFramework.xml
+C:\Hospital Management System\bin\EntityFramework.SqlServer.xml
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations.initial.resources
+C:\Hospital Management System\obj\Debug\Hospital Management System.csproj.GenerateResource.cache
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations._in.resources
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations.table.resources
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations.iuyt.resources
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations.final.resources
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations._12333.resources
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations.qqqqq.resources
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations.qqqjhvhuqq.resources
+C:\Hospital Management System\obj\Debug\Hospital_Management_System.Migrations.finale.resources

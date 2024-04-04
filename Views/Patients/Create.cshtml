@@ -1,0 +1,87 @@
+﻿@model Hospital_Management_System.Models.Patient
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<style>
+    body {
+        
+        background-image: url('../../content/images/need doc.jpg');
+        background-attachment: fixed;
+        background-position: right;
+        background-size: 1360px 768px;
+        background-color: #77c9d4;
+        font-family: Arial, sans-serif;
+    }
+</style>
+
+<h2>Create Your Profile</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+       <div class="form-horizontal">
+             <h4>Enter Your Details</h4>
+            <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+             <div class="form-group">
+        @Html.LabelFor(model => model.PatientName, htmlAttributes: new { @class = "control-label col-md-2" })
+                  <div class="col-md-10">
+              @Html.EditorFor(model => model.PatientName, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PatientName,"", new { @class = "text-danger" })
+                    </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PatientAge, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PatientAge, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PatientAge, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ContactNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ContactNumber, new { htmlAttributes = new { @class = "form-control", @type = "number" } })
+            @Html.ValidationMessageFor(model => model.ContactNumber, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PatientEmailAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PatientEmailAddress, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PatientEmailAddress, "", new { @class = "text-danger" })
+            @if (ViewBag.Email ==true)
+            {
+                <span class="text-danger">Email already in use</span>
+            }
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @type = "password" } })
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Add Your Profile" class="btn btn-success" />
+        </div>
+    </div>
+</div>
+
+    
+ 
+}
+
+@*<div>
+        @Html.ActionLink("Login_Page", "Create","Patients")
+    </div>*@
